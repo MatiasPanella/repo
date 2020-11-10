@@ -1,0 +1,12 @@
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.Entities\bin\Debug\Lab.Demo.Entities.dll.config
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.Entities\bin\Debug\Lab.Demo.Entities.dll
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.Entities\bin\Debug\Lab.Demo.Entities.pdb
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.Entities\bin\Debug\EntityFramework.dll
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.Entities\bin\Debug\EntityFramework.xml
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.Entities\obj\Debug\Lab.Demo.Entities.csprojAssemblyReference.cache
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.Entities\obj\Debug\Lab.Demo.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.Entities\obj\Debug\Lab.Demo.Entities.csproj.CopyComplete
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.Entities\obj\Debug\Lab.Demo.Entities.dll
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.Entities\obj\Debug\Lab.Demo.Entities.pdb

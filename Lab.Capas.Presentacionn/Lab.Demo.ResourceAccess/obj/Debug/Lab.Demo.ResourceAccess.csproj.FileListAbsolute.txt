@@ -1,0 +1,15 @@
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\bin\Debug\Lab.Demo.ResourceAccess.dll.config
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\bin\Debug\Lab.Demo.ResourceAccess.dll
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\bin\Debug\Lab.Demo.ResourceAccess.pdb
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\bin\Debug\EntityFramework.dll
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\bin\Debug\Lab.Demo.Entities.dll
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\bin\Debug\Lab.Demo.Entities.pdb
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\bin\Debug\Lab.Demo.Entities.dll.config
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\bin\Debug\EntityFramework.xml
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\obj\Debug\Lab.Demo.ResourceAccess.csprojAssemblyReference.cache
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\obj\Debug\Lab.Demo.ResourceAccess.csproj.CoreCompileInputs.cache
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\obj\Debug\Lab.Demo.ResourceAccess.csproj.CopyComplete
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\obj\Debug\Lab.Demo.ResourceAccess.dll
+C:\Users\Panella\source\repos\Lab.Capas.Presentacionn\Lab.Demo.ResourceAccess\obj\Debug\Lab.Demo.ResourceAccess.pdb
