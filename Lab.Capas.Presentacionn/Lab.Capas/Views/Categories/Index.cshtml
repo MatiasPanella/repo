@@ -1,46 +1,37 @@
-﻿@model IEnumerable<Lab.Demo.Entities.Categories>
-
+﻿@model List<Lab.Capas.Models.CategoriesView>
 @{
-    ViewBag.Title = "Categories";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Index";
 }
 
-<h2>Categories</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<h2>Categories List</h2>
+<div>@Html.ActionLink("Insertar", "Insert", "Categories")</div>
+<br />
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.CategoryName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Picture)
-        </th>
-        <th></th>
+       
+        <td>
+            <b>ID</b>
+        </td>
+        <td>
+            <b> Name</b>
+        </td>
+        <td>
+            <b>Description</b>
+        </td>
+        <td>
+           <b> Options</b>
+        </td>    
     </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.CategoryName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Picture)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CategoryID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CategoryID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CategoryID })
-        </td>
-    </tr>
-}
-
-</table>
+        @foreach (var cat in Model)
+        {
+        <tr>
+            <td>@cat.CategoryId</td>
+            <td>@cat.CategoryName</td>
+            <td>@cat.Description</td>
+            <td>
+            @Html.ActionLink("Eliminar","Delete", new { id = cat.CategoryId }, new { onclick = "return confirm('Seguro que deseas eliminar?')" })
+            @Html.ActionLink("Edit","Edit",new { id = cat.CategoryId}, new { @class = "glyphicon glyphicon-pencil" })
+            </td>
+        </tr>
+    }
+    </table>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lab.Demo.Logic
 {
-    class CategoriesLogic : BaseLogic, ILogic<Categories>
+    public class CategoriesLogic : BaseLogic, ILogic<Categories>
     {
         public void Delete(int id)
         {
@@ -18,7 +18,17 @@ namespace Lab.Demo.Logic
 
         public List<Categories> GetAll()
         {
-            return context.Categories.ToList();
+            List<Categories> result = new List<Categories>();
+            try 
+            { 
+                result =  context.Categories.ToList();
+            }
+            catch (Exception)
+            {
+                throw new Exception("Ocurrio un error al buscar las categorias");
+            }
+
+            return result;
         }
 
         public Categories GetOne(int id)

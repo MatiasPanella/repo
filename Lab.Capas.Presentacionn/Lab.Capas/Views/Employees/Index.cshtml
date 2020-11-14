@@ -1,130 +1,41 @@
-﻿@model IEnumerable<Lab.Demo.Entities.Employees>
-
+﻿@model List<Lab.Capas.Models.EmployeesView>
 @{
-    ViewBag.Title = "Employees";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Index";
 }
 
-<h2>Employees</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<h2>Employees List</h2>
+<div>@Html.ActionLink("Insertar", "Insert", "Employees")</div>
+<br />
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Employees2.LastName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LastName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FirstName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TitleOfCourtesy)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BirthDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.HireDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Address)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.City)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Region)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PostalCode)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Country)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.HomePhone)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Extension)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Photo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Notes)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PhotoPath)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Employees2.LastName)
+            ID
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.LastName)
+             Name
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.FirstName)
+            Surname
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TitleOfCourtesy)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BirthDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.HireDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Address)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.City)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Region)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PostalCode)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Country)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.HomePhone)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Extension)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Photo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Notes)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PhotoPath)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EmployeeID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EmployeeID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EmployeeID })
+            Options
         </td>
     </tr>
-}
+    @foreach (var emp in Model)
+    {
+        <tr>
+            <td>@emp.EmployeeId</td>
+            <td>@emp.FirstName</td>
+            <td>@emp.LastName</td>
+          
+            <td>
+                @Html.ActionLink("Eliminar", "Delete", new { id = emp.EmployeeId }, new { onclick = "return confirm('Seguro que deseas eliminar el registro?')" })
+                -
+                @Html.ActionLink("Editar","Edit", new { id = emp.EmployeeId}, new { @class = "glyphicon glyphicon-pencil" })
 
+            </td>
+            
+            
+        </tr>
+    }
 </table>

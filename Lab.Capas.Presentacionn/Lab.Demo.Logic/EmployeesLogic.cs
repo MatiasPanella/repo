@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Lab.Demo.Logic
 {
-    class EmployeesLogic : BaseLogic, ILogic<Employees>
+    public class EmployeesLogic : BaseLogic, ILogic<Employees>
     {
         public void Delete(int id)
         {
@@ -19,10 +19,20 @@ namespace Lab.Demo.Logic
 
         public List<Employees> GetAll()
         {
-            return context.Employees.ToList();
+            List<Employees> result = new List<Employees>();
+            try
+            {
+                result = context.Employees.ToList();
+            }
+            catch (Exception)
+            {
+                throw new Exception("Ocurrio un error al buscar todos los empleados");
+            }
+
+            return result;
         }
 
-        public Employees GetOne (int id)
+        public Employees GetOne(int id)
         {
             return context.Employees.FirstOrDefault(r => r.EmployeeID.Equals(id));
         }
@@ -33,9 +43,16 @@ namespace Lab.Demo.Logic
                           orderby emp.EmployeeID descending
                           select emp.EmployeeID).FirstOrDefault();
             lastId += 1;
-
-            Employees newEmployee = context.Employees.Add(entity);
-            context.SaveChanges();
+            entity.EmployeeID = lastId;
+           
+                Employees newEmployee = context.Employees.Add(entity);
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (Exception) {
+                throw new Exception("algo mal ocurrio");
+            }
             return newEmployee;
         }
 
@@ -47,6 +64,5 @@ namespace Lab.Demo.Logic
             context.SaveChanges();
         }
     }
-
     
 }
